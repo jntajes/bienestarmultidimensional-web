@@ -38,7 +38,7 @@ export default function Navbar() {
           className="inline-flex min-w-0 items-center gap-2 text-xs font-semibold leading-tight tracking-tight text-ink sm:gap-2.5 sm:text-lg"
         >
           <img
-            src="/assets/logo-jb.png"
+            src={`${import.meta.env.BASE_URL}assets/logo-jb.png`}
             alt=""
             aria-hidden="true"
             className="h-8 w-auto shrink-0 object-contain sm:h-10"

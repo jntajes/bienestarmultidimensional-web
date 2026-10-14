@@ -3,6 +3,8 @@ export interface NavItem {
   href: string;
 }
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}`;
+
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Descubrí', href: '#descubri' },
@@ -27,7 +29,7 @@ export const THERAPIES: Therapy[] = [
     name: 'Medicina Estelar',
     description:
       'Un acompañamiento cercano desde una mirada multidimensional, con cámaras de sanación, códigos y lenguaje de luz, frecuencias sonoras y plantas medicinales.',
-    image: '/assets/medicina-estelar.jpg',
+    image: publicAsset('medicina-estelar.jpg'),
     link: 'Quiero conocer este acompañamiento',
   },
   {
@@ -35,7 +37,7 @@ export const THERAPIES: Therapy[] = [
     name: 'Código Estelar',
     description:
       'Una instancia de Medicina Estelar para observar un síntoma como mensaje y explorar su significado desde una mirada multidimensional.',
-    image: '/assets/codigo-estelar.jpg',
+    image: publicAsset('codigo-estelar.jpg'),
     link: 'Quiero explorar Código Estelar',
   },
   {
@@ -43,7 +45,7 @@ export const THERAPIES: Therapy[] = [
     name: 'Registros Akáshicos',
     description:
       'Un espacio para traer tus preguntas, acceder a la sabiduría de tu alma y encontrar claridad y dirección para tu día a día.',
-    image: '/assets/registros-akashicos.jpg',
+    image: publicAsset('registros-akashicos.jpg'),
     link: 'Quiero consultar por Registros Akáshicos',
   },
   {
@@ -51,7 +53,7 @@ export const THERAPIES: Therapy[] = [
     name: 'Conexión con la Diosa',
     description:
       'Meditación guiada canalizada para reconectar con la energía femenina primordial, la ciclicidad y tus dones.',
-    image: '/assets/conexion-diosa.jpg',
+    image: publicAsset('conexion-diosa.jpg'),
     link: 'Quiero conocer esta meditación',
   },
   {
@@ -60,7 +62,7 @@ export const THERAPIES: Therapy[] = [
     description:
       'Acompañamiento espiritual, a pedido de la persona o de un ser querido, para transitar el final de la vida con presencia y armonía.',
     note: 'Servicio honorario. No busca acelerar ni intervenir en el proceso de final de vida.',
-    image: '/assets/puente-de-luz.jpg',
+    image: publicAsset('puente-de-luz.jpg'),
     link: 'Quiero consultar por Puente de Luz',
   },
 ];

@@ -50,7 +50,7 @@ export default function Hero() {
             style={{ animationDelay: '200ms' }}
           >
             <img
-              src="/assets/therapist-hero.webp"
+              src={`${import.meta.env.BASE_URL}assets/therapist-hero.webp`}
               alt="Retrato de la terapeuta en un espacio de bienestar"
               className="aspect-[3/4] w-full rounded-2xl object-cover shadow-xl shadow-mint/10"
             />
