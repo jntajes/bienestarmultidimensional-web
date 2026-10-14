@@ -3,6 +3,7 @@ import { CONTACTS } from '../../content';
 import CTAButton from '../CTAButton';
 import Reveal from '../Reveal';
 import DecorativeShape from '../DecorativeShape';
+import ExampleLabel from '../ExampleLabel';
 
 export default function ContactSection() {
   return (
@@ -30,9 +31,11 @@ export default function ContactSection() {
               camino
             </span>
           </h2>
-          <p className="mt-6 text-lg text-white/80 leading-relaxed">
-            Texto de presentación pendiente. Una invitación cálida a dar el
-            primer paso.
+          <ExampleLabel id="CONT-01" className="mt-6" />
+          <p className="mt-3 text-lg text-white/80 leading-relaxed">
+            Si querés conocer el enfoque o consultar qué opción puede acompañar
+            tu momento, escribime. Te cuento cómo es cada propuesta para que
+            puedas decidir con tranquilidad.
           </p>
         </Reveal>
 

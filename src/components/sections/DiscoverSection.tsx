@@ -2,6 +2,7 @@ import Reveal from '../Reveal';
 import CTAButton from '../CTAButton';
 import ImagePlaceholder from '../ImagePlaceholder';
 import DecorativeShape from '../DecorativeShape';
+import ExampleLabel from '../ExampleLabel';
 
 export default function DiscoverSection() {
   return (
@@ -23,17 +24,20 @@ export default function DiscoverSection() {
                 bienestar
               </span>
             </h2>
-            <p className="mt-6 text-lg text-gray-DEFAULT leading-relaxed">
-              Texto de presentación pendiente. Una breve introducción a la
-              filosofía y el enfoque del trabajo holístico.
+            <ExampleLabel id="DESC-01" className="mt-6" />
+            <p className="mt-3 text-lg text-gray-DEFAULT leading-relaxed">
+              Cada encuentro ofrece un espacio para hacer una pausa, observar
+              tus sensaciones y explorar recursos desde una mirada corporal,
+              emocional y espiritual.
             </p>
-            <p className="mt-4 text-base text-gray-DEFAULT leading-relaxed">
-              Texto de presentación pendiente. Un segundo párrafo que profundiza
-              en la propuesta de valor y la mirada integral del acompañamiento.
+            <ExampleLabel id="DESC-02" className="mt-5" />
+            <p className="mt-3 text-base text-gray-DEFAULT leading-relaxed">
+              El proceso se construye con escucha y a tu ritmo. Podés comenzar
+              por una sesión individual o conocer el programa grupal de muestra.
             </p>
             <div className="mt-8">
-              <CTAButton href="#contacto" variant="ghost">
-                Quiero saber más →
+              <CTAButton href="#programa" variant="ghost">
+                Conocer el programa →
               </CTAButton>
             </div>
           </Reveal>
@@ -43,7 +47,7 @@ export default function DiscoverSection() {
             delay={150}
           >
             <ImagePlaceholder
-              label="Imagen pendiente"
+              label="EJEMPLO DESC-03 · imagen por definir"
               ratio="portrait"
               className="shadow-lg shadow-mint/10"
             />

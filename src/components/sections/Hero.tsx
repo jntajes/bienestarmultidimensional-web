@@ -1,5 +1,6 @@
 import CTAButton from '../CTAButton';
 import DecorativeShape from '../DecorativeShape';
+import ExampleLabel from '../ExampleLabel';
 
 export default function Hero() {
   return (
@@ -35,13 +36,16 @@ export default function Hero() {
               Un espacio de acompañamiento para reconectar con tu cuerpo,
               comprender tus bloqueos y abrir nuevas posibilidades de bienestar.
             </p>
-            <div className="mt-9 flex flex-col sm:flex-row gap-4">
-              <CTAButton href="#terapias" variant="primary">
+            <div className="mt-9">
+              <ExampleLabel id="HERO-01" className="mb-3" />
+              <div className="flex flex-col gap-4 sm:flex-row">
+              <CTAButton href="#programa" variant="primary">
                 Explorá la propuesta
               </CTAButton>
-              <CTAButton href="#contacto" variant="secondary">
-                Contactarme
+              <CTAButton href="#terapias" variant="secondary">
+                Ver acompañamientos
               </CTAButton>
+              </div>
             </div>
           </div>
 

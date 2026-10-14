@@ -2,6 +2,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
 import DiscoverSection from './components/sections/DiscoverSection';
+import ProgramSection from './components/sections/ProgramSection';
 import TherapiesSection from './components/sections/TherapiesSection';
 import DifferenceSection from './components/sections/DifferenceSection';
 import TestimonialsSection from './components/sections/TestimonialsSection';
@@ -14,6 +15,7 @@ export default function App() {
       <main>
         <Hero />
         <DiscoverSection />
+        <ProgramSection />
         <TherapiesSection />
         <DifferenceSection />
         <TestimonialsSection />

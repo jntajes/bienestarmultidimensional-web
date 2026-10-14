@@ -8,6 +8,7 @@ const publicAsset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Descubrí', href: '#descubri' },
+  { label: 'Programa', href: '#programa' },
   { label: 'Terapias', href: '#terapias' },
   { label: 'Diferencial', href: '#diferencial' },
   { label: 'Testimonios', href: '#testimonios' },
@@ -69,6 +70,7 @@ export const THERAPIES: Therapy[] = [
 
 export interface Difference {
   id: string;
+  exampleId: string;
   title: string;
   description: string;
   icon: string;
@@ -77,55 +79,31 @@ export interface Difference {
 export const DIFFERENCES: Difference[] = [
   {
     id: 'acompanamiento',
+    exampleId: 'DIF-01',
     title: 'Acompañamiento personalizado',
-    description: 'Texto de presentación pendiente.',
+    description: 'Cada proceso parte de una conversación sobre tu momento, tus preguntas y lo que esperás explorar.',
     icon: 'heart',
   },
   {
     id: 'integral',
+    exampleId: 'DIF-02',
     title: 'Mirada integral',
-    description: 'Texto de presentación pendiente.',
+    description: 'Un espacio para poner en diálogo cuerpo, emociones y dimensión espiritual desde tu propia experiencia.',
     icon: 'compass',
   },
   {
     id: 'confianza',
+    exampleId: 'DIF-03',
     title: 'Espacio de confianza',
-    description: 'Texto de presentación pendiente.',
+    description: 'La escucha y el respeto por tus tiempos orientan cada encuentro; podés compartir solo lo que quieras.',
     icon: 'shield',
   },
   {
     id: 'consciente',
+    exampleId: 'DIF-04',
     title: 'Experiencia consciente',
-    description: 'Texto de presentación pendiente.',
+    description: 'La propuesta invita a observar lo que te pasa y elegir, con autonomía, qué recursos te resultan significativos.',
     icon: 'leaf',
-  },
-];
-
-export interface Testimonial {
-  id: string;
-  quote: string;
-  name: string;
-  role: string;
-}
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 't1',
-    quote: 'Testimonio pendiente de definir.',
-    name: 'Nombre pendiente',
-    role: 'Cliente',
-  },
-  {
-    id: 't2',
-    quote: 'Testimonio pendiente de definir.',
-    name: 'Nombre pendiente',
-    role: 'Cliente',
-  },
-  {
-    id: 't3',
-    quote: 'Testimonio pendiente de definir.',
-    name: 'Nombre pendiente',
-    role: 'Cliente',
   },
 ];
 
@@ -142,7 +120,7 @@ export const CONTACTS = {
 };
 
 export const BRAND = {
-  name: 'Nombre del profesional',
+  name: 'Profesional a confirmar',
   tagline: 'Reprogramación Somática Estelar',
-  shortDescription: 'Texto de presentación pendiente.',
+  shortDescription: 'Un espacio de escucha y exploración personal desde una mirada somática y espiritual.',
 };
