@@ -1,5 +1,6 @@
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import PaletteSwitcher from './components/PaletteSwitcher';
 import Hero from './components/sections/Hero';
 import DiscoverSection from './components/sections/DiscoverSection';
 import ProgramSection from './components/sections/ProgramSection';
@@ -14,14 +15,15 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <DiscoverSection />
         <ProgramSection />
+        <DiscoverSection />
         <TherapiesSection />
         <DifferenceSection />
         <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />
+      <PaletteSwitcher />
     </>
   );
 }

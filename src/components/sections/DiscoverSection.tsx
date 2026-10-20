@@ -1,8 +1,5 @@
 import Reveal from '../Reveal';
-import CTAButton from '../CTAButton';
-import ImagePlaceholder from '../ImagePlaceholder';
 import DecorativeShape from '../DecorativeShape';
-import ExampleLabel from '../ExampleLabel';
 
 export default function DiscoverSection() {
   return (
@@ -16,40 +13,30 @@ export default function DiscoverSection() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           <Reveal className="lg:col-span-6 lg:order-2">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mint-muted mb-5">
-              Descubrí
+              Sobre mí
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-[2.6rem] font-semibold leading-[1.15] text-ink text-balance">
-              Descubrí una nueva forma de{' '}
+              Una presencia humana para acompañar tu{' '}
               <span className="font-accent text-mint text-4xl sm:text-5xl font-normal">
-                bienestar
+                proceso
               </span>
             </h2>
-            <ExampleLabel id="DESC-01" className="mt-6" />
-            <p className="mt-3 text-lg text-gray-DEFAULT leading-relaxed">
-              Cada encuentro ofrece un espacio para hacer una pausa, observar
-              tus sensaciones y explorar recursos desde una mirada corporal,
-              emocional y espiritual.
+            <p className="mt-6 text-lg text-gray-DEFAULT leading-relaxed">
+              Soy Jess, creadora de Humana Estelar. Acompaño procesos personales desde una escucha atenta del cuerpo, la emoción y las dimensiones sutiles que también nos habitan.
             </p>
-            <ExampleLabel id="DESC-02" className="mt-5" />
             <p className="mt-3 text-base text-gray-DEFAULT leading-relaxed">
-              El proceso se construye con escucha y a tu ritmo. Podés comenzar
-              por una sesión individual o conocer el programa grupal de muestra.
+              Mi intención es ofrecer un espacio cuidado, sin recetas prefabricadas, donde puedas volver a vos, explorar lo que hoy pide atención y encontrar tu propia forma de avanzar.
             </p>
-            <div className="mt-8">
-              <CTAButton href="#programa" variant="ghost">
-                Conocer el programa →
-              </CTAButton>
-            </div>
           </Reveal>
 
           <Reveal
             className="lg:col-span-6 lg:order-1 relative"
             delay={150}
           >
-            <ImagePlaceholder
-              label="EJEMPLO DESC-03 · imagen por definir"
-              ratio="portrait"
-              className="shadow-lg shadow-mint/10"
+            <img
+              src={`${import.meta.env.BASE_URL}assets/therapist-hero.webp`}
+              alt="Jess en un espacio de bienestar"
+              className="aspect-[3/4] w-full rounded-2xl object-cover shadow-lg shadow-mint/10"
             />
             <DecorativeShape
               variant="arc"

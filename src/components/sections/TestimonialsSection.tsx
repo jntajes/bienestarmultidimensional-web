@@ -1,7 +1,6 @@
 import SectionTitle from '../SectionTitle';
 import Reveal from '../Reveal';
 import DecorativeShape from '../DecorativeShape';
-import ExampleLabel from '../ExampleLabel';
 
 export default function TestimonialsSection() {
   return (
@@ -18,17 +17,21 @@ export default function TestimonialsSection() {
         <Reveal>
           <SectionTitle
             eyebrow="Experiencias"
-            title={<>Voces compartidas con permiso</>}
-            description="Las experiencias que se publiquen aquí deben ser reales y contar con autorización de cada persona."
+            title={<>Voces compartidas con cuidado</>}
+            description="Un espacio reservado para historias reales, compartidas de forma voluntaria y con consentimiento."
           />
         </Reveal>
 
-        <Reveal delay={150} className="mx-auto mt-14 max-w-3xl text-center">
-          <ExampleLabel id="TEST-01" />
-          <p className="mt-4 text-lg leading-relaxed text-ink">
-            Este espacio queda reservado para sumar una experiencia real,
-            compartida con autorización. No es una reseña de cliente.
-          </p>
+        <Reveal delay={150} className="mx-auto mt-14 max-w-3xl">
+          <div className="rounded-2xl border border-mint/20 bg-cream p-8 text-center shadow-sm sm:p-10">
+            <p className="font-serif text-2xl leading-snug text-ink sm:text-3xl">
+              “Cada recorrido merece ser contado desde la voz de quien lo vive.”
+            </p>
+            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-gray">
+              Próximamente, este espacio reunirá experiencias auténticas para
+              acompañarte a conocer el enfoque desde distintas vivencias.
+            </p>
+          </div>
         </Reveal>
       </div>
     </section>

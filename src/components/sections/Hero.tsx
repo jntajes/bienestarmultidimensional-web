@@ -1,6 +1,5 @@
 import CTAButton from '../CTAButton';
 import DecorativeShape from '../DecorativeShape';
-import ExampleLabel from '../ExampleLabel';
 
 export default function Hero() {
   return (
@@ -23,27 +22,25 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="animate-fade-up">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-mint-muted mb-6">
-              Reprogramación Somática Estelar
+              Jess ★ Humana Estelar
             </p>
             <h1 className="max-w-xl text-4xl sm:text-5xl lg:text-[3.5rem] font-semibold leading-[1.08] text-ink text-balance">
-              Una transformación profunda para habilitar tu{' '}
+              Bienvenidx a mi{' '}
               <span className="font-accent text-mint text-[3.25rem] sm:text-5xl lg:text-6xl font-normal">
-                humanx
+                universo
               </span>{' '}
               multidimensional
             </h1>
             <p className="mt-7 text-lg text-gray-DEFAULT leading-relaxed max-w-lg">
-              Un espacio de acompañamiento para reconectar con tu cuerpo,
-              comprender tus bloqueos y abrir nuevas posibilidades de bienestar.
+              Un espacio diseñado para abordar la reprogramación desde la energía hasta lo somático, permitiéndote reescribir tu identidad y transformar la manera en que vives.
             </p>
             <div className="mt-9">
-              <ExampleLabel id="HERO-01" className="mb-3" />
               <div className="flex flex-col gap-4 sm:flex-row">
-              <CTAButton href="#programa" variant="primary">
-                Explorá la propuesta
+              <CTAButton href="#terapias" variant="primary">
+                Conocé mis servicios
               </CTAButton>
-              <CTAButton href="#terapias" variant="secondary">
-                Ver acompañamientos
+              <CTAButton href="#contacto" variant="secondary">
+                Contáctame
               </CTAButton>
               </div>
             </div>

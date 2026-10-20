@@ -3,7 +3,6 @@ import { CONTACTS } from '../../content';
 import CTAButton from '../CTAButton';
 import Reveal from '../Reveal';
 import DecorativeShape from '../DecorativeShape';
-import ExampleLabel from '../ExampleLabel';
 
 export default function ContactSection() {
   return (
@@ -26,16 +25,16 @@ export default function ContactSection() {
             Contacto
           </p>
           <h2 className="text-4xl sm:text-5xl font-semibold leading-[1.1] text-balance">
-            Empezá tu{' '}
+            Empezá tu camino{' '}
             <span className="font-accent text-5xl sm:text-6xl text-mint-bright font-normal">
-              camino
+              multidimensional
             </span>
           </h2>
-          <ExampleLabel id="CONT-01" className="mt-6" />
           <p className="mt-3 text-lg text-white/80 leading-relaxed">
-            Si querés conocer el enfoque o consultar qué opción puede acompañar
-            tu momento, escribime. Te cuento cómo es cada propuesta para que
-            puedas decidir con tranquilidad.
+            Si resonás con esta mirada, no lo guardes solo como teoría: escribime y charlemos.
+          </p>
+          <p className="mt-3 text-lg text-white/80 leading-relaxed">
+            Te sorprenderá cómo una simple conversación puede activar el movimiento que estabas esperando.
           </p>
         </Reveal>
 

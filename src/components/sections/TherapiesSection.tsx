@@ -44,9 +44,9 @@ export default function TherapiesSection() {
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <Reveal>
           <SectionTitle
-            eyebrow="Acompañamientos"
+            eyebrow="Mis servicios"
             title={<>Una propuesta para cada momento de tu camino</>}
-            description="Conocé las distintas formas de acompañamiento disponibles y elegí la que hoy resuene con vos."
+            description="A través de la canalización y un enfoque multidimensional que considera todos tus cuerpos, generamos un espacio de trabajo conjunto para que tu transformación sea profunda y alineada con tu momento actual."
           />
         </Reveal>
 

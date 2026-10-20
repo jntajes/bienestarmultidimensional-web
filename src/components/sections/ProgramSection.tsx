@@ -1,8 +1,5 @@
-import { ArrowUpRight, MessageCircle } from 'lucide-react';
-import { CONTACTS } from '../../content';
 import CTAButton from '../CTAButton';
 import DecorativeShape from '../DecorativeShape';
-import ExampleLabel from '../ExampleLabel';
 import Reveal from '../Reveal';
 
 const steps = [
@@ -38,64 +35,27 @@ export default function ProgramSection() {
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <div className="grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">
-            <ExampleLabel id="P-01" />
             <p className="mb-4 mt-7 text-xs font-semibold uppercase tracking-[0.22em] text-mint-muted">
-              Programa guiado
+              Descubrí lo nuevo
             </p>
             <h2 className="text-3xl font-semibold leading-[1.15] text-ink text-balance sm:text-4xl">
-              Volver al cuerpo, a tu propio ritmo
+              Reprogramarte: el camino somático de tus creencias
             </h2>
 
             <div className="mt-6">
-              <ExampleLabel id="P-02" />
               <p className="mt-3 text-lg leading-relaxed text-gray-DEFAULT">
-                Un recorrido grupal de exploración somática para hacer una
-                pausa, observar tus sensaciones y sumar prácticas de registro a
-                tu vida cotidiana.
+                Este programa grupal viene a transformarte en la investigadora de tus propios límites.
               </p>
             </div>
 
             <div className="mt-6">
-              <ExampleLabel id="P-03" />
               <p className="mt-3 text-base leading-relaxed text-gray-DEFAULT">
-                Pensado como punto de partida para quienes quieran dedicar un
-                tiempo a la autoobservación en un espacio acompañado y
-                respetuoso de los ritmos personales.
+                A través del juego, la meditación y el trabajo energético, desprogramaremos esas creencias que limitan tu potencial.
               </p>
             </div>
-
-            <div className="mt-8">
-              <ExampleLabel id="P-06" />
-              <p className="mt-3 text-sm leading-relaxed text-gray-DEFAULT">
-                Fechas y arancel a confirmar. Escribime para consultar por la
-                próxima edición y recibir información antes de decidir.
-              </p>
-            </div>
-
-            <div className="mt-7">
-              <ExampleLabel id="P-07" />
-              <div className="mt-3">
-                <CTAButton
-                  href={CONTACTS.whatsappLink}
-                  variant="primary"
-                  className="w-full sm:w-auto"
-                >
-                  <MessageCircle size={18} />
-                  Consultar por el programa
-                  <ArrowUpRight size={16} />
-                </CTAButton>
-              </div>
-            </div>
-
-            <ExampleLabel id="P-08" className="mt-6" />
-            <p className="mt-2 max-w-lg text-xs leading-relaxed text-gray-DEFAULT">
-              Esta propuesta de muestra no reemplaza atención médica,
-              psicológica ni servicios de emergencia.
-            </p>
           </Reveal>
 
           <Reveal className="lg:col-span-7 lg:pt-8" delay={150}>
-            <ExampleLabel id="P-04" />
             <h3 className="mt-4 text-2xl font-semibold text-ink">
               Un recorrido posible, paso a paso
             </h3>
@@ -114,35 +74,10 @@ export default function ProgramSection() {
                 </li>
               ))}
             </ol>
-
-            <div className="mt-10 border-t border-mint/20 pt-7">
-              <ExampleLabel id="P-05" />
-              <dl className="mt-4 grid gap-x-8 gap-y-5 sm:grid-cols-2">
-                <div>
-                  <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-mint-muted">
-                    Duración de muestra
-                  </dt>
-                  <dd className="mt-1 text-sm text-ink">
-                    4 semanas · 1 encuentro por semana
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-mint-muted">
-                    Modalidad de muestra
-                  </dt>
-                  <dd className="mt-1 text-sm text-ink">
-                    Encuentros grupales en línea
-                  </dd>
-                </div>
-                <div className="sm:col-span-2">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-mint-muted">
-                    Material de muestra
-                  </dt>
-                  <dd className="mt-1 text-sm text-ink">
-                    Guía de registro personal para acompañar las prácticas
-                  </dd>
-                </div>
-              </dl>
+            <div className="mt-8">
+              <CTAButton href="#programa" variant="ghost" disabled>
+                Conocé el programa →
+              </CTAButton>
             </div>
           </Reveal>
         </div>

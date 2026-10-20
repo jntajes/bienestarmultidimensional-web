@@ -7,11 +7,11 @@ const publicAsset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Inicio', href: '#inicio' },
-  { label: 'Descubrí', href: '#descubri' },
   { label: 'Programa', href: '#programa' },
-  { label: 'Terapias', href: '#terapias' },
+  { label: 'Sobre mí', href: '#descubri' },
+  { label: 'Mis servicios', href: '#terapias' },
   { label: 'Diferencial', href: '#diferencial' },
-  { label: 'Testimonios', href: '#testimonios' },
+  { label: 'Experiencias', href: '#testimonios' },
   { label: 'Contacto', href: '#contacto' },
 ];
 
@@ -70,7 +70,6 @@ export const THERAPIES: Therapy[] = [
 
 export interface Difference {
   id: string;
-  exampleId: string;
   title: string;
   description: string;
   icon: string;
@@ -79,31 +78,33 @@ export interface Difference {
 export const DIFFERENCES: Difference[] = [
   {
     id: 'acompanamiento',
-    exampleId: 'DIF-01',
-    title: 'Acompañamiento personalizado',
-    description: 'Cada proceso parte de una conversación sobre tu momento, tus preguntas y lo que esperás explorar.',
+    title: 'A la medida de tu evolución',
+    description: 'No hay fórmulas repetidas ni caminos estandarizados. Cada sesión parte de tu presente y es guiada por la canalización.',
     icon: 'heart',
   },
   {
     id: 'integral',
-    exampleId: 'DIF-02',
-    title: 'Mirada integral',
-    description: 'Un espacio para poner en diálogo cuerpo, emociones y dimensión espiritual desde tu propia experiencia.',
+    title: 'Multidimensionalidad real',
+    description: 'Ningún cuerpo queda fuera de la intervención. Trabajamos siempre como el todo que somos, solo así logramos la transformación completa.',
     icon: 'compass',
   },
   {
     id: 'confianza',
-    exampleId: 'DIF-03',
-    title: 'Espacio de confianza',
-    description: 'La escucha y el respeto por tus tiempos orientan cada encuentro; podés compartir solo lo que quieras.',
+    title: 'Soberanía y respeto',
+    description: 'Aquí no vienes a encajar en un molde, sino a habitar tu propia verdad. Es un espacio libre de juicios y con un único límite: el que ponés vos.',
     icon: 'shield',
   },
   {
     id: 'consciente',
-    exampleId: 'DIF-04',
-    title: 'Experiencia consciente',
-    description: 'La propuesta invita a observar lo que te pasa y elegir, con autonomía, qué recursos te resultan significativos.',
+    title: 'Conciencia aplicada',
+    description: 'El enfoque es práctico, de una espiritualidad "bajada a tierra". Al final del día seguimos siendo humanxs atravesados por la humanidad.',
     icon: 'leaf',
+  },
+  {
+    id: 'incomodidad',
+    title: 'La incomodidad como aliada',
+    description: 'Los procesos son abordados con y desde el amor, lo que no quiere decir que sea todo luces y colores. Para transformar el dolor hay que darle cuerpo y atravesarlo; aquí no esquivamos la incomodidad, la usamos como catalizador.',
+    icon: 'heart',
   },
 ];
 
@@ -113,14 +114,10 @@ export const CONTACTS = {
   email: 'dra.jessicaferradaz@gmail.com',
   instagram: '@jess_humana.estelar',
   instagramLink: 'https://www.instagram.com/jess_humana.estelar',
-  socials: [
-    { label: 'Instagram', href: '#' },
-    { label: 'Facebook', href: '#' },
-  ],
 };
 
 export const BRAND = {
-  name: 'Profesional a confirmar',
-  tagline: 'Reprogramación Somática Estelar',
+  name: 'Jess',
+  tagline: 'Jess ★ Humana Estelar',
   shortDescription: 'Un espacio de escucha y exploración personal desde una mirada somática y espiritual.',
 };

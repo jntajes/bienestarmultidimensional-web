@@ -1,6 +1,5 @@
 import { Instagram, Mail, MessageCircle } from 'lucide-react';
 import { NAV_ITEMS, BRAND, CONTACTS } from '../../content';
-import ExampleLabel from '../ExampleLabel';
 
 export default function Footer() {
   return (
@@ -9,7 +8,6 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           <div>
             <p className="text-lg font-semibold text-white">{BRAND.tagline}</p>
-            <ExampleLabel id="MARCA-01" className="mt-3" />
             <p className="mt-3 text-sm leading-relaxed max-w-xs">
               {BRAND.shortDescription}
             </p>
@@ -69,12 +67,6 @@ export default function Footer() {
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} {BRAND.tagline}. Todos los derechos reservados.
           </p>
-          <div className="flex items-center gap-2">
-            <ExampleLabel id="FOOT-01" />
-            <p className="text-xs text-white/60">
-              Copy de muestra: revisar antes de publicar.
-            </p>
-          </div>
         </div>
       </div>
     </footer>

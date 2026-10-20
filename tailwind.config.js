@@ -1,22 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+const themeColor = (name) => `rgb(var(--${name}) / <alpha-value>)`;
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
         mint: {
-          soft: '#BEDFD6',
-          lighter: '#D3EEE7',
-          DEFAULT: '#51AB91',
-          bright: '#6ED1B2',
-          muted: '#66A391',
+          soft: themeColor('brand-soft'),
+          lighter: themeColor('brand-lighter'),
+          DEFAULT: themeColor('brand-primary'),
+          bright: themeColor('brand-bright'),
+          muted: themeColor('brand-muted'),
         },
-        ink: '#111111',
+        ink: themeColor('brand-ink'),
         gray: {
-          light: '#E1E1E1',
-          DEFAULT: '#6A6A6A',
+          light: themeColor('brand-gray-light'),
+          DEFAULT: themeColor('brand-gray'),
         },
-        cream: '#FDFDFD',
+        cream: themeColor('brand-cream'),
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
