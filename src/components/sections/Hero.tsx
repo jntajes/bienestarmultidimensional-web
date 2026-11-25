@@ -1,5 +1,4 @@
 import CTAButton from '../CTAButton';
-import DecorativeShape from '../DecorativeShape';
 
 export default function Hero() {
   return (
@@ -12,11 +11,6 @@ export default function Hero() {
         <div className="absolute right-0 top-0 h-[40rem] w-[40rem] -translate-y-1/3 translate-x-1/4 rounded-full bg-mint/15 blur-3xl" />
         <div className="absolute bottom-0 left-0 h-[30rem] w-[30rem] -translate-x-1/4 translate-y-1/3 rounded-full bg-[#0d0a36] blur-3xl" />
       </div>
-
-      <DecorativeShape
-        variant="arc"
-        className="absolute top-32 right-10 w-40 h-40 text-mint/30 hidden lg:block"
-      />
 
       <div className="mx-auto max-w-content px-5 sm:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -64,11 +58,6 @@ export default function Hero() {
               className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-ink/5 via-transparent to-mint/15 mix-blend-soft-light"
               aria-hidden="true"
             />
-            <DecorativeShape
-              variant="leaf"
-              className="absolute -bottom-8 -left-8 w-24 h-24 text-mint"
-            />
-            <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full border border-mint/30" />
           </div>
         </div>
       </div>

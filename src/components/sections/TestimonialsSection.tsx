@@ -1,6 +1,5 @@
 import SectionTitle from '../SectionTitle';
 import Reveal from '../Reveal';
-import DecorativeShape from '../DecorativeShape';
 
 export default function TestimonialsSection() {
   return (
@@ -8,11 +7,6 @@ export default function TestimonialsSection() {
       id="testimonios"
       className="relative py-24 sm:py-32 bg-mint-lighter/40 overflow-hidden"
     >
-      <DecorativeShape
-        variant="blob"
-        className="absolute bottom-10 left-0 w-72 h-72 text-mint/20 hidden lg:block"
-      />
-
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <Reveal>
           <SectionTitle

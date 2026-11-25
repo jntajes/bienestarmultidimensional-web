@@ -1,14 +1,9 @@
 import Reveal from '../Reveal';
-import DecorativeShape from '../DecorativeShape';
 
 export default function DiscoverSection() {
   return (
     <section id="descubri" className="relative overflow-hidden py-24 sm:py-32">
       <div className="star-field pointer-events-none absolute inset-0 -z-10 opacity-50" />
-      <DecorativeShape
-        variant="blob"
-        className="absolute top-20 left-0 hidden h-64 w-64 text-mint/20 lg:block"
-      />
 
       <div className="mx-auto max-w-3xl px-5 sm:px-8">
         <Reveal>
@@ -52,10 +47,6 @@ export default function DiscoverSection() {
             <p className="mt-3 text-base text-gray-DEFAULT leading-relaxed">
               Con 🤍, Jess ✨
             </p>
-            <DecorativeShape
-              variant="arc"
-              className="absolute -bottom-6 -right-5 h-28 w-28 text-mint/40"
-            />
           </div>
         </Reveal>
       </div>

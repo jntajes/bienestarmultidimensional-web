@@ -142,6 +142,7 @@ export const CONTACTS = {
   email: 'dra.jessicaferradaz@gmail.com',
   instagram: '@jess_humana.estelar',
   instagramLink: 'https://www.instagram.com/jess_humana.estelar',
+  youtubeLink: 'https://www.youtube.com/@jess_humana.estelar',
 };
 
 export const BRAND = {

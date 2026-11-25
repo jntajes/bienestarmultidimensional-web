@@ -1,5 +1,4 @@
 import CTAButton from '../CTAButton';
-import DecorativeShape from '../DecorativeShape';
 import Reveal from '../Reveal';
 
 const steps = [
@@ -27,11 +26,6 @@ export default function ProgramSection() {
       id="programa"
       className="relative overflow-hidden bg-cream py-24 sm:py-32"
     >
-      <DecorativeShape
-        variant="arc"
-        className="absolute -right-10 top-12 hidden h-40 w-40 text-mint/20 lg:block"
-      />
-
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <div className="grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">
