@@ -15,16 +15,22 @@ export default function DifferenceSection() {
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <Reveal>
           <SectionTitle
-            eyebrow="Diferencial"
-            title={<>¿Qué lo hace diferente?</>}
-            description="No es solamente una terapia; es un espacio pensado para vos."
+            eyebrow="Puntos Importantes"
+            title={<>Los no negociables de este Universo Multidimensional.</>}
+            description={
+              'Para todo lo que construimos existen pilares de apoyo… en toda receta hay ingredientes que no pueden faltar.\n\nEn este universo que te comparto hay ciertos aspectos fundamentales, que si querés subirte a mi nave y trabajar conmigo, tenés que conocer.'
+            }
           />
         </Reveal>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+        <div className="mx-auto mt-14 grid max-w-5xl gap-4 md:grid-cols-2">
           {DIFFERENCES.map((item, i) => (
-            <Reveal key={item.id} delay={i * 100}>
-              <DifferenceCard item={item} />
+            <Reveal
+              key={item.id}
+              delay={i * 80}
+              className={i === DIFFERENCES.length - 1 ? 'md:col-span-2 md:mx-auto md:w-[calc(50%-0.5rem)]' : ''}
+            >
+              <DifferenceCard item={item} number={i + 1} />
             </Reveal>
           ))}
         </div>

@@ -7,64 +7,92 @@ const publicAsset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Inicio', href: '#inicio' },
-  { label: 'Programa', href: '#programa' },
   { label: 'Sobre mí', href: '#descubri' },
-  { label: 'Mis servicios', href: '#terapias' },
   { label: 'Diferencial', href: '#diferencial' },
+  { label: 'Mis servicios', href: '#terapias' },
   { label: 'Experiencias', href: '#testimonios' },
   { label: 'Contacto', href: '#contacto' },
 ];
 
-export interface Therapy {
+export interface ServiceLink {
+  id: string;
+  name: string;
+  href: string;
+  external?: boolean;
+}
+
+export interface Galaxy {
   id: string;
   name: string;
   description: string;
-  note?: string;
   image: string;
-  link: string;
+  services: ServiceLink[];
 }
 
-export const THERAPIES: Therapy[] = [
+export const GALAXIES: Galaxy[] = [
   {
     id: 'medicina-estelar',
-    name: 'Medicina Estelar',
+    name: 'Galaxia Free Taz',
     description:
-      'Un acompañamiento cercano desde una mirada multidimensional, con cámaras de sanación, códigos y lenguaje de luz, frecuencias sonoras y plantas medicinales.',
+      'Un espacio a tu ritmo, con recursos breves y libres que potencien tu proceso.',
     image: publicAsset('medicina-estelar.jpg'),
-    link: 'Quiero conocer este acompañamiento',
+    services: [
+      {
+        id: 'youtube-free-taz',
+        name: 'YouTube',
+        href: 'https://www.youtube.com/@jess_humana.estelar',
+        external: true,
+      },
+    ],
   },
   {
     id: 'codigo-estelar',
-    name: 'Código Estelar',
+    name: 'Galaxia Start Point',
     description:
-      'Una instancia de Medicina Estelar para observar un síntoma como mensaje y explorar su significado desde una mirada multidimensional.',
+      'Espacios concretos, amorosos y sutiles para comenzar tu movimiento o darle un giro a lo que venimos trabajando.',
     image: publicAsset('codigo-estelar.jpg'),
-    link: 'Quiero explorar Código Estelar',
+    services: [
+      {
+        id: 'reconectarte',
+        name: 'Programa de Meditaciones Canalizadas ReconectarTe',
+        href: 'https://www.youtube.com/@jess_humana.estelar',
+        external: true,
+      },
+      {
+        id: 'conexion-con-la-diosa',
+        name: 'Conexión con la Diosa',
+        href: '?servicio=conexion-con-la-diosa',
+      },
+      {
+        id: 'puente-de-luz',
+        name: 'Puente de Luz',
+        href: '?servicio=puente-de-luz',
+      },
+    ],
   },
   {
     id: 'registros-akashicos',
-    name: 'Registros Akáshicos',
+    name: 'Galaxia Silver Eight',
     description:
-      'Un espacio para traer tus preguntas, acceder a la sabiduría de tu alma y encontrar claridad y dirección para tu día a día.',
+      'Espacios expansivos, para transformarte de raíz. Si vas a por todas, esta es tu galaxia.',
     image: publicAsset('registros-akashicos.jpg'),
-    link: 'Quiero consultar por Registros Akáshicos',
-  },
-  {
-    id: 'conexion-con-la-diosa',
-    name: 'Conexión con la Diosa',
-    description:
-      'Meditación guiada canalizada para reconectar con la energía femenina primordial, la ciclicidad y tus dones.',
-    image: publicAsset('conexion-diosa.jpg'),
-    link: 'Quiero conocer esta meditación',
-  },
-  {
-    id: 'puente-de-luz',
-    name: 'Puente de Luz',
-    description:
-      'Acompañamiento espiritual, a pedido de la persona o de un ser querido, para transitar el final de la vida con presencia y armonía.',
-    note: 'Servicio honorario. No busca acelerar ni intervenir en el proceso de final de vida.',
-    image: publicAsset('puente-de-luz.jpg'),
-    link: 'Quiero consultar por Puente de Luz',
+    services: [
+      {
+        id: 'brujula-akashica',
+        name: 'Brújula Akáshica',
+        href: '?servicio=brujula-akashica',
+      },
+      {
+        id: 'impulso',
+        name: 'ImPulso',
+        href: '?servicio=impulso',
+      },
+      {
+        id: 'codigo-estelar',
+        name: 'Código Estelar',
+        href: '?servicio=codigo-estelar',
+      },
+    ],
   },
 ];
 
@@ -78,32 +106,32 @@ export interface Difference {
 export const DIFFERENCES: Difference[] = [
   {
     id: 'acompanamiento',
-    title: 'A la medida de tu evolución',
-    description: 'No hay fórmulas repetidas ni caminos estandarizados. Cada sesión parte de tu presente y es guiada por la canalización.',
+    title: 'Plan de vuelo a tu medida.',
+    description: 'No hay fórmulas repetidas ni caminos estandarizados. Cada sesión parte de tu presente hacia tu objetivo y es guiada por la canalización.',
     icon: 'heart',
   },
   {
     id: 'integral',
-    title: 'Multidimensionalidad real',
-    description: 'Ningún cuerpo queda fuera de la intervención. Trabajamos siempre como el todo que somos, solo así logramos la transformación completa.',
+    title: 'Aplicación de los comandos en la diaria.',
+    description: 'Está buenísima la data de las estrellas, pero estamos encarnadxs y al final del día dormimos en una cama bajo un techo que hay que sostener. Por eso, trabajamos desde la energía y con la “magia” que atraviesa la multidimensionalidad pero con un enfoque práctico, que puedas llevar a tu cotidiano.',
     icon: 'compass',
   },
   {
     id: 'confianza',
-    title: 'Soberanía y respeto',
-    description: 'Aquí no vienes a encajar en un molde, sino a habitar tu propia verdad. Es un espacio libre de juicios y con un único límite: el que ponés vos.',
+    title: 'Con soltura pero atravesando el campo de asteroides.',
+    description: 'Con todo el amor y a tu ritmo, pero la incomodidad se atraviesa. Evitar sentir, nos deja en el mismo (in)cómodo lugar que habitamos…solo a través de la experiencia podemos transformarnos…te prometo que no es tan terrible, lo volvemos una danza amena y libre.',
     icon: 'shield',
   },
   {
     id: 'consciente',
-    title: 'Conciencia aplicada',
-    description: 'El enfoque es práctico, de una espiritualidad "bajada a tierra". Al final del día seguimos siendo humanxs atravesados por la humanidad.',
+    title: 'Sos comandante de tu nave.',
+    description: 'Es tu proceso, sos quien está contigo mismx el 100% de tu día, por tanto, quien tiene la última decisión, quien pone los límites o elige la expansión. Mi misión es acompañarte a aprender a manejarla de forma plena.',
     icon: 'leaf',
   },
   {
     id: 'incomodidad',
-    title: 'La incomodidad como aliada',
-    description: 'Los procesos son abordados con y desde el amor, lo que no quiere decir que sea todo luces y colores. Para transformar el dolor hay que darle cuerpo y atravesarlo; aquí no esquivamos la incomodidad, la usamos como catalizador.',
+    title: 'Protocolos de seguridad siempre activados.',
+    description: 'Ante todo existe una responsabilidad con tu nave…ética, moral y energética. Los espacios son cuidados por la tecnología de luz y por el código de ética que mi profesión me brindó. Primum non nocere y el secreto profesional siempre como estandarte.',
     icon: 'heart',
   },
 ];

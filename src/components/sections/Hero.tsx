@@ -8,9 +8,9 @@ export default function Hero() {
       className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden"
     >
       {/* Background accents */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-mint-lighter/50 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4" />
-        <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-mint-soft/30 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
+      <div className="star-field absolute inset-0 -z-10">
+        <div className="absolute right-0 top-0 h-[40rem] w-[40rem] -translate-y-1/3 translate-x-1/4 rounded-full bg-mint/15 blur-3xl" />
+        <div className="absolute bottom-0 left-0 h-[30rem] w-[30rem] -translate-x-1/4 translate-y-1/3 rounded-full bg-[#0d0a36] blur-3xl" />
       </div>
 
       <DecorativeShape
@@ -32,7 +32,11 @@ export default function Hero() {
               multidimensional
             </h1>
             <p className="mt-7 text-lg text-gray-DEFAULT leading-relaxed max-w-lg">
-              Un espacio diseñado para abordar la reprogramación desde la energía hasta lo somático, permitiéndote reescribir tu identidad y transformar la manera en que vives.
+              Un espacio diseñado para acompañar tu transformación hacia una vida en plenitud, de forma liviana, divertida y simple.
+              <br />
+              Porque el autoconocimiento no tiene que ser solemne.
+              <br />
+              Porque lo que importa es no dejar tu poder en manos de alguien más.
             </p>
             <div className="mt-9">
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -51,9 +55,14 @@ export default function Hero() {
             style={{ animationDelay: '200ms' }}
           >
             <img
-              src={`${import.meta.env.BASE_URL}assets/therapist-hero.webp`}
-              alt="Retrato de la terapeuta en un espacio de bienestar"
-              className="aspect-[3/4] w-full rounded-2xl object-cover shadow-xl shadow-mint/10"
+              src={`${import.meta.env.BASE_URL}assets/jess-hero-estelar.png`}
+              alt="Retrato de Jess en un entorno estelar"
+              className="aspect-[5/6] w-full rounded-[2rem] object-cover shadow-2xl shadow-black/40"
+              style={{ filter: 'brightness(1.04) contrast(1.06) saturate(0.92)' }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-ink/5 via-transparent to-mint/15 mix-blend-soft-light"
+              aria-hidden="true"
             />
             <DecorativeShape
               variant="leaf"

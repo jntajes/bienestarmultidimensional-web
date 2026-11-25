@@ -3,7 +3,7 @@ import { NAV_ITEMS, BRAND, CONTACTS } from '../../content';
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-white/70">
+    <footer className="bg-black text-white/70">
       <div className="mx-auto max-w-content px-5 sm:px-8 py-16">
         <div className="grid gap-12 md:grid-cols-3">
           <div>

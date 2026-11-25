@@ -3,6 +3,7 @@ import type { Difference } from '../../content';
 
 interface Props {
   item: Difference;
+  number: number;
 }
 
 const ICONS: Record<string, typeof Heart> = {
@@ -12,17 +13,24 @@ const ICONS: Record<string, typeof Heart> = {
   leaf: Leaf,
 };
 
-export default function DifferenceCard({ item }: Props) {
+export default function DifferenceCard({ item, number }: Props) {
   const Icon = ICONS[item.icon] ?? Heart;
   return (
-    <div className="flex flex-col items-start">
-      <div className="w-12 h-12 rounded-full border border-mint/30 flex items-center justify-center text-mint mb-5">
-        <Icon size={22} strokeWidth={1.4} />
+    <article className="relative h-full overflow-hidden rounded-2xl border border-mint/20 bg-[#0d0a36]/55 p-6 shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-1 hover:border-mint/50 sm:p-7">
+      <span className="absolute right-5 top-3 font-serif text-6xl leading-none text-mint/10" aria-hidden="true">
+        0{number}
+      </span>
+      <div className="relative flex items-start gap-5">
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-mint/30 bg-mint/10 text-mint-bright">
+          <Icon size={21} strokeWidth={1.5} />
+        </div>
+        <div>
+          <h3 className="pr-8 text-lg font-semibold leading-snug text-ink">{item.title}</h3>
+          <p className="mt-3 text-sm leading-relaxed text-gray-DEFAULT">
+            {item.description}
+          </p>
+        </div>
       </div>
-      <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
-      <p className="mt-2 text-sm text-gray-DEFAULT leading-relaxed">
-        {item.description}
-      </p>
-    </div>
+    </article>
   );
 }

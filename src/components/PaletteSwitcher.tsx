@@ -22,8 +22,8 @@ const PALETTES = [
   {
     id: 'noche-mistica',
     name: 'Noche mística',
-    description: 'Azul tinta, violeta y luz suave para una atmósfera ritual.',
-    colors: ['#0E1023', '#5B4BA0', '#B48EFF', '#F6F3FF'],
+    description: 'Azul tinta y destellos celestes para una atmósfera ritual.',
+    colors: ['#07111F', '#12417E', '#4C97E0', '#EFF7FF'],
   },
 ] as const;
 
@@ -31,7 +31,7 @@ type PaletteId = (typeof PALETTES)[number]['id'];
 
 export default function PaletteSwitcher() {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState<PaletteId>('azul-estelar');
+  const [selected, setSelected] = useState<PaletteId>('noche-mistica');
 
   useEffect(() => {
     document.documentElement.dataset.palette = selected;

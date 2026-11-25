@@ -28,7 +28,7 @@ export default function SectionTitle({
         {title}
       </h2>
       {description && (
-        <p className="mt-5 text-base sm:text-lg text-gray-DEFAULT leading-relaxed">
+        <p className="mt-5 text-base sm:text-lg text-gray-DEFAULT leading-relaxed whitespace-pre-line">
           {description}
         </p>
       )}

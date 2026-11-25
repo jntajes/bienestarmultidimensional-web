@@ -1,29 +1,32 @@
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import PaletteSwitcher from './components/PaletteSwitcher';
 import Hero from './components/sections/Hero';
 import DiscoverSection from './components/sections/DiscoverSection';
-import ProgramSection from './components/sections/ProgramSection';
 import TherapiesSection from './components/sections/TherapiesSection';
 import DifferenceSection from './components/sections/DifferenceSection';
 import TestimonialsSection from './components/sections/TestimonialsSection';
 import ContactSection from './components/sections/ContactSection';
+import ServiceDetailPage from './components/sections/ServiceDetailPage';
 
 export default function App() {
+  const service = new URLSearchParams(window.location.search).get('servicio');
+
+  if (service) {
+    return <ServiceDetailPage serviceId={service} />;
+  }
+
   return (
     <>
       <Navbar />
       <main>
         <Hero />
-        <ProgramSection />
         <DiscoverSection />
-        <TherapiesSection />
         <DifferenceSection />
+        <TherapiesSection />
         <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />
-      <PaletteSwitcher />
     </>
   );
 }

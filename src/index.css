@@ -2,58 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root,
-:root[data-palette='azul-estelar'] {
-  --brand-primary: 21 58 121;
-  --brand-bright: 64 111 181;
-  --brand-muted: 67 96 143;
-  --brand-soft: 203 220 241;
-  --brand-lighter: 233 241 251;
-  --brand-ink: 15 31 57;
-  --brand-gray: 81 94 116;
-  --brand-gray-light: 218 226 237;
-  --brand-cream: 252 253 255;
-}
-
-:root[data-palette='noche-cosmica'] {
-  --brand-primary: 17 45 91;
-  --brand-bright: 77 136 211;
-  --brand-muted: 75 98 140;
-  --brand-soft: 199 216 240;
-  --brand-lighter: 232 239 250;
-  --brand-ink: 11 24 49;
-  --brand-gray: 74 85 106;
-  --brand-gray-light: 215 222 233;
-  --brand-cream: 249 251 255;
-}
-
-:root[data-palette='azul-tierra'] {
-  --brand-primary: 39 71 122;
-  --brand-bright: 169 112 82;
-  --brand-muted: 97 98 123;
-  --brand-soft: 220 221 232;
-  --brand-lighter: 244 241 238;
-  --brand-ink: 33 39 57;
-  --brand-gray: 92 89 98;
-  --brand-gray-light: 225 221 220;
-  --brand-cream: 255 253 250;
-}
-
-:root[data-palette='noche-mistica'] {
-  --brand-primary: 91 75 160;
-  --brand-bright: 180 142 255;
-  --brand-muted: 190 177 233;
-  --brand-soft: 55 47 91;
-  --brand-lighter: 31 28 54;
-  --brand-ink: 246 243 255;
-  --brand-gray: 197 190 215;
-  --brand-gray-light: 68 62 91;
-  --brand-cream: 14 16 35;
-}
-
-:root[data-palette='noche-mistica'] footer,
-:root[data-palette='noche-mistica'] .palette-trigger {
-  background-color: rgb(6 9 25);
+:root {
+  --brand-primary: 30 84 163;
+  --brand-bright: 122 189 255;
+  --brand-muted: 142 184 231;
+  --brand-soft: 13 10 54;
+  --brand-lighter: 7 12 34;
+  --brand-ink: 241 246 255;
+  --brand-gray: 183 201 226;
+  --brand-gray-light: 49 65 108;
+  --brand-cream: 0 0 0;
 }
 
 @layer base {
@@ -67,6 +25,11 @@
   body {
     @apply bg-cream text-ink font-sans antialiased;
     line-height: 1.6;
+    background-image:
+      radial-gradient(circle at 12% 12%, rgb(30 84 163 / 0.26), transparent 22rem),
+      radial-gradient(circle at 86% 34%, rgb(13 10 54 / 0.95), transparent 30rem),
+      radial-gradient(circle at 68% 84%, rgb(30 84 163 / 0.16), transparent 24rem);
+    background-attachment: fixed;
   }
 
   ::selection {
@@ -77,6 +40,15 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .star-field {
+    background-image:
+      radial-gradient(circle at 12% 22%, rgb(255 255 255 / 0.72) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 74% 18%, rgb(122 189 255 / 0.68) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 88% 64%, rgb(255 255 255 / 0.48) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 35% 76%, rgb(122 189 255 / 0.56) 0 1px, transparent 1.5px);
+    background-size: 230px 230px, 310px 310px, 280px 280px, 370px 370px;
   }
 }
 
